@@ -1,0 +1,45 @@
+@import "vars"
+@import "mixins"
+
+
+html
+  font-size: 15px
+
+body
+  margin: 0
+
+  background-color: $gray
+
+  font-family: 'Montserrat', sans-serif
+  color: $black
+  font-size: 1rem
+
+*, *:after, *:before
+  box-sizing: border-box
+
+
+//Bootstrap
+@import "../../../node_modules/bootstrap/scss/functions"
+@import "../../../node_modules/bootstrap/scss/variables"
+@import "../../../node_modules/bootstrap/scss/mixins"
+@import "../../../node_modules/bootstrap/scss/bootstrap-grid"
+
+
+// Blocks
+@import "blocks/page"
+@import "blocks/header"
+@import "blocks/logo"
+@import "blocks/nav"
+@import "blocks/lang"
+@import "blocks/content"
+@import "blocks/intro"
+@import "blocks/btn"
+@import "blocks/contacts"
+@import "blocks/author"
+@import "blocks/circle"
+@import "blocks/footer"
+
+
+// Vendor
+@import "vendor/slick"
+

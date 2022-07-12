@@ -1,0 +1,22 @@
+.nav
+  display: flex
+
+  font-weight: 500
+  font-size: 1rem
+
+.nav__link
+  padding: .25rem 1.5rem
+  margin-right: 1rem
+
+  color: $black
+  text-decoration: none
+
+  border-radius: 20px
+
+  transition: background-color .2s linear
+  &:hover
+    background-color: darken($gray, 3%)
+
+  &.active
+    color: $white
+    background-color: $primary
