@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.min.css" />
-    <title>HomePage</title>
+    <title>Services</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </head>
 <body>
@@ -199,46 +199,49 @@
     <div class="content">
         
         <div class="container">
-            <div class="intro">
-                <div class="intro__text">Меня зовут</div>
-                <div class="intro__title">Кирилл Гурьянов</div>
-                <div class="intro__subtitle">
-                    Я занимаюсь
-                    <span class="intro__subtitle-pink">созданием сайтов</span>
-                </div>
+            <h1 class="content__title">Услуги</h1>
         
+            <div class="services">
                 <div class="row">
-                    <div class="col-lg-3">
-                        <a class="btn btn--primary"
-                           href="#"
-                           data-bs-toggle="modal"
-                           data-bs-target="#requestModal">
-                            Оставить заявку
-                        </a>
+                    <div class="col-lg-4">
+                        <div class="services__item">
+                            <svg class="services__icon">
+                                <use xlink:href="#layers"></use>
+                            </svg>
+                            <div class="services__title">Веб-дизайн</div>
+                            <div class="services__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur beatae commodi, consequatur doloremque ducimus error fugiat itaque necessitatibus odit porro possimus suscipit, ut velit veniam voluptates! Nam provident quae quos.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-9">
-                        <ul class="contacts">
-                            <li class="contacts__item">
-                                <a class="contacts__link"
-                                   href="tel:123456789">
-                                    123456789
-                                </a>
-                            </li>
-                            <li class="contacts__item">
-                                <a class="contacts__link"
-                                   href="mailto:example@example.com">
-                                    example@example.com
-                                </a>
-                            </li>
-                        </ul> <!--contacts-->
+                    <div class="col-lg-4">
+                        <div class="services__item">
+                            <svg class="services__icon">
+                                <use xlink:href="#front-end"></use>
+                            </svg>
+                            <div class="services__title">Front-end</div>
+                            <div class="services__text">
+                                <p>Adipisicing elit. Aspernatur beatae commodi, consequatur doloremque ducimus error fugiat itaque necessitatibus odit porro possimus suscipit, ut velit veniam voluptates! Nam provident quae quos.</p>
+                            </div>
+                        </div>
                     </div>
-                </div> <!--row-->
+                    <div class="col-lg-4">
+                        <div class="services__item">
+                            <svg class="services__icon">
+                                <use xlink:href="#back-end"></use>
+                            </svg>
+                            <div class="services__title">Back-end</div>
+                            <div class="services__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur beatae commodi, consequatur doloremque ducimus error fugiat itaque necessitatibus odit porro possimus suscipit, ut velit veniam voluptates! Nam provident quae quos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--row-->
+            </div><!--services-->
         
-            </div> <!--intro-->
-        </div> <!--container-->
-        
-        <img class="author" src="./assets/img/man.png" alt="">
-        <div class="circle"></div>
+            <a class="btn btn--primary" href="#" data-bs-toggle="modal"
+               data-bs-target="#requestModal">Оставить заявку</a>
+        </div>
         
     </div>
     <!--Footer-->
