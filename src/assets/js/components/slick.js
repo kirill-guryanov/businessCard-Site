@@ -1,1 +1,8 @@
-//= ../../../../node_modules/slick-carousel/slick/slick.js
+console.log(1);
+$("#portfolio").slick({
+    arrows: true,
+    dots: true,
+    speed: 800,
+    slidesToShow: 2,
+    slidesToScroll: 2
+});
