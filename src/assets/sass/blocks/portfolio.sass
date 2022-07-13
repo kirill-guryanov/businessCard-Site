@@ -1,4 +1,33 @@
+$arrowColor: #c5c5c5
+
+.portfolio
+  position: relative
+
+.portfolio__slider
+  position: relative
+  height: 270px
+  overflow: hidden
+
+  &:after
+    content: ""
+    display: block
+    width: 100%
+    height: 100%
+
+    background: $white url("../img/ajax-loader.gif") center no-repeat
+
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 2
+
+  &.slick-initialized
+    overflow: visible
+    &:after
+      display: none
+
 .portfolio__item
+  margin: 0 auto
   max-width: 540px
   overflow: hidden
 
@@ -38,3 +67,32 @@
 
   transform: translateY(100%)
   transition: transform .2s linear
+
+.portfolio__arrow
+  padding: 0
+
+  background: none
+  border: none
+  cursor: pointer
+
+  position: absolute
+  top: 50%
+  z-index: 2
+
+  &:hover .portfolio__arrow-icon
+    fill: $primary
+
+  &--prev
+    left: -2rem
+    transform: translateY(-50%) rotate(180deg)
+
+  &--next
+    right: -2rem
+    transform: translateY(-50%)
+
+.portfolio__arrow-icon
+  width: 1.3rem
+  height: 2rem
+
+  fill: $arrowColor
+  transition: fill .1s linear
