@@ -6,15 +6,20 @@
   box-shadow: 0 5px 25px rgba(0, 0, 0, .15)
   border-radius: 63% 37% 60% 40% / 50% 30% 70% 50%
 
-  animation: circleRadius 5s alternate infinite
+  animation: circleRadius 10s alternate infinite
 
   position: absolute
   right: 1rem
   bottom: 8rem
-  z-index: 1
+  z-index: -1
 
 @keyframes circleRadius
   0%
-    border-radius: 63% 37% 60% 40% / 50% 30% 70% 50%
+    border-radius: 67% 33% 58% 42% / 38% 49% 51% 62%
+    transform: scale(.8)
+  60%
+    border-radius: 68% 32% 66% 34% / 47% 52% 48% 53%
+    transform: scale(1.4) rotate(1turn)
   100%
-    border-radius: 33% 67% 20% 80% / 36% 57% 43% 64%
+    border-radius: 92% 8% 92% 8% / 84% 10% 90% 16%
+    transform: scale(3) rotate(1turn)
